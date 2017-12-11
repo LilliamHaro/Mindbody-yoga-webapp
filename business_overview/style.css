@@ -1,0 +1,237 @@
+
+body {
+	font-family : "Roboto Light", sans-serif;
+	font-size   : 12px;
+	margin 		: 0px;
+	color       : #494d32;
+}
+
+h4 {
+	margin      : 0 0 20px 0;
+	font-weight : bold;
+}
+
+header {
+	background-color : #ECF5F0;
+}
+
+header img {
+	padding : 15px;
+}
+
+nav {
+	position : absolute;
+	top 	 : 29px;
+	right    :  0px;
+}
+
+nav div {
+	display 	 : inline-block;
+	border-top   : 1px solid Gainsboro;
+	border-right : 1px solid Gainsboro;
+	border-left  : 1px solid Gainsboro;
+	padding 	 : 15px;
+	margin 		 : -2.5px;
+	background   : linear-gradient(white, white, #f2f2f2);
+}
+
+nav div#current_main {
+	border-radius : 7px 7px 0px 0px;
+	padding-top   : 18px;
+	box-shadow    : 0px -4px 15px Gainsboro;
+	background    : white;
+}
+
+nav div#current_main a {
+	color : black;
+}
+
+nav a {
+	text-decoration : none;
+	color 			: #A1BE8F;
+	font-weight 	: bold;
+	font-size       : 14px;
+}
+
+#submenu {
+	padding-left : 80px;
+	font-size    : 14px;
+	display      : flex;
+}
+
+#submenu div {
+	display : inline-block;
+	padding : 10px;
+	cursor  : pointer;
+}
+
+#current_sub {
+	font-weight : bold;
+}
+
+#main {
+	background-color : #F3F4EE;
+	padding          : 20px 100px;
+}
+
+#center_wrapper {
+	display : table;
+	margin  : 0px auto;
+}
+
+#new_program {
+	display 	   : inline-block;
+	vertical-align : top;
+}
+
+#new_program div {
+	background    : linear-gradient(#C8E6B6, #A1BE8F);
+	padding 	  : 22px;
+	border-radius : 7px;
+	border        : 1px solid #A1BE8F;
+}
+
+#program_cards {
+	margin : -90px 0px 0px 75px;
+}
+
+/* Individual program card styles */
+
+.card {
+	background-color : white;
+	padding    	 	 : 15px;
+	margin 			 : 0px 30px 30px 30px;
+	border-radius 	 : 7px;
+	display 		 : inline-block;
+	box-shadow 		 : 0px 0px 10px Gainsboro;
+	vertical-align   : top;
+}
+
+.pencil_sprite {
+    left 	   : 0px;
+    width 	   : 20px;
+    height     : 18px;
+    background : url('../homework-core-master/assets/pencil_icons.png') 0 0 no-repeat;
+    display    : inline-block;
+    float      : right;
+}
+
+.pencil_sprite:hover {
+    background : url('../homework-core-master/assets/pencil_icons.png') 0 -51px;
+}
+
+.button {
+	cursor : pointer;
+}
+
+.total_monthly_sales {
+	background-color : #F3F4EE;
+	margin           : 0 -15px;
+	padding          : 15px;
+}
+
+.total_monthly_sales table {
+	width : 100%;
+}
+
+.pricing table {
+	display : inline-table;
+}
+
+.pricing td {
+	white-space   : nowrap;
+    overflow 	  : hidden;
+    text-overflow : ellipsis;
+    padding       : 0px 5px;
+}
+
+.pricing .spark_lines {
+	display  	   : inline-grid;
+	vertical-align : top;
+	padding-left   : 5px;
+}
+
+/* END of Individual program card styles */
+
+/* Bottom table styles */
+
+#program_table {
+	margin-left : 110px;
+	width       : 50%;
+}
+
+#program_table tr:first-child {
+	border-bottom : 1px solid #A1BE8F;
+}
+
+#program_table td:first-child {
+	font-size   : 14px;
+	font-weight : bold;
+}
+
+#program_table td {
+	padding : 5px;
+}
+
+/* END of bottom table styles */
+
+
+/* Bootstrap overrides */
+
+.modal .modal-header,
+.modal .btn {
+	background-color : #A1BE8F;
+	color            : #fff;
+	font-weight      : bold;
+}
+
+.modal .form-control:focus {
+	box-shadow : 0 0 5px #A1BE8F;
+	border-color     : #A1BE8F;
+}
+
+/* END of bootstrap overrides */
+
+
+/* Media queries for responsive design */
+
+@media screen and (max-width: 950px) {
+    nav {
+    	display : grid;
+    }
+
+    #program_table {
+    	width : 100%;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    #main {
+    	padding : 15px;
+    }
+
+    #submenu {
+    	padding-left : 15px;
+    	display      : grid;
+    }
+
+    #program_cards {
+    	margin : 5px;
+    }
+
+    #new_program {
+    	display : table;
+    	margin  : 0px auto;
+    }
+
+    .card {
+    	margin  : 20px;
+    	display : block;
+    }
+
+    #program_table {
+    	margin : 0px;
+    }
+}
+
+/* Media queries for responsive design */
