@@ -1,5 +1,5 @@
 # Mindbody-yoga-webapp
-Mindbody Urban Yoga webpage
+Mindbody Urban Yoga webpage completed using Angular, Bootstrap, and responsive design
 
 ## Project requirements:
 1. Clone this repo (or download the zip archive) to get started.
